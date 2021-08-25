@@ -8,7 +8,7 @@
 </head>
 
 <body>
-
+<%-- p384 --%>
 	<form name="customer_maintenance_form">
 		<b>고객 정보 관리</b><p>
 		<a href="./customer_insert_form.jsp">회원 가입</a><br>
