@@ -1,4 +1,4 @@
-<!-- // file = " ../../common/include/html_input2_rud.inc"" -->
+<!-- // file = " ../../common/include/html_input2_rud.inc"" p386-->
 
 
 <tr>
@@ -6,6 +6,11 @@
 	<td><input type="password" name="cust_pw" size="11" maxlength="10"
 		readonly>
 		<span class="msg_blue"><영 숫자 10자리이내)</span></td>
+</tr>
+<tr>
+	<th><span class="mmsg_red">*</span> 이 &nbsp; 름 &nbsp;</th>
+	<td><input type="text" name="cust_name" size="10" maxlength="5"
+		 readonly>
 </tr>
 <tr>
 	<th><span class="mmsg_red">*</span>전 화 번 호</th>
