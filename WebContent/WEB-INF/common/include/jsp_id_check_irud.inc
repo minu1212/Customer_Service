@@ -6,7 +6,7 @@
 	
 	if (cust_id.isEmpty()) {
 		out.print("<script>alert('아이디를 입력하시오!!');"
-							+ "history.back();
+							+ "history.back();"
 						+"</script>");
 	}
 %>
