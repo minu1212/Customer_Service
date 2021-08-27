@@ -4,14 +4,14 @@
 <%
 	//고객테이블(customer) 튜블 검색 
 	String sql = "SELECT * FROM customer WHERE (cust_id = ?)";
-	pstmt = conn,prepareStatement(sql);
+	pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, cust_id);
 	rset = pstmt.executeQuery();
 	
 	//질의처리 결과(rset) 체크
 	//cursor - 초기 상태 아니거나 행(결과)이 없으면 false 리턴
 	if (!rset.isBeforeFirst()) {
-		out.print("<script>alert('존재하지 않는 아이디입니다!!");"
+		out.print("<script>alert('존재하지 않는 아이디입니다!!');"
 					+ "history.back();"
 				+ "</script>");
 	}
@@ -27,5 +27,6 @@
 	String cust_gender = rset.getString("cust_gender");
 	String cust_email = rset.getString("cust_email");
 	String cust_join_date = rset.getString("cust_join_date");	
+	%>
 
 	
